@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{CD7AD33C-0617-4C0B-A38D-D22E94629403}|https">
+﻿<Properties StartupConfiguration="{AA913457-0613-4639-9D8E-1AEB0D222C17}|http">
   <MonoDevelop.Ide.ItemProperties.Laboratorium1 PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Laboratorium1/Controllers/HomeController.cs">
     <Files>
@@ -26,9 +26,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Laboratorium3_228App_229 FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Laboratorium2 PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
 </Properties>
