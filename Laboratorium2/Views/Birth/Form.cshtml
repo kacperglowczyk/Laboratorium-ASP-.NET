@@ -4,8 +4,25 @@
 @{
 }
 
-<form action="Result" method="POST">
-    Podaj imie <input type="text" name="Name" /> <br />
-    Podaj date urodzenia <input type="date" name="BirthDate" />
-    <button type="submit">Wyślij</button>
-</form>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-6">
+            <h2>Kalkulator</h2>
+            <form action="Result" method="POST">
+                <div class="mb-3">
+                    <label class="form-label" for="x">Imię i nazwisko</label>
+                    <input class="form-control" type="text" name="Name" id="x" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="y">Data urodzenia</label>
+                    <input class="form-control" type="date" name="VirthDate" id="y" />
+
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

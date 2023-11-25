@@ -1,5 +1,6 @@
-﻿using System.Data;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Globalization;
+using System.Data;
+using System;
 
 namespace Laboratorium2.Models
 {
@@ -10,18 +11,23 @@ namespace Laboratorium2.Models
 
         public bool IsValid()
         {
-            return DateTime.Now.CompareTo(BirthDate) > 0;
+            return Name != null && BirthDate < DateTime.Today;
         }
 
-        public int Birth()
+        public int age
         {
-            var today = DateTime.Today;
+            get
+            {
+                DateTime today = DateTime.Today;
+                int age = today.Year - BirthDate.Year;
 
-            var age = today.Year - BirthDate.Year;
+                if (BirthDate.Date > today.AddYears(-age))
+                {
+                    age--;
+                }
+                return age;
+            }
 
-            if (BirthDate.Date > today.AddYears(-age)) age--;
-
-            return age;
         }
     }
 }

@@ -3,6 +3,10 @@ using Laboratorium2.Models;
 
 namespace Laboratorium2.Controllers
 {
+    public enum Operators
+    {
+        ADD, SUB, MUL, DIV
+    }
     public class CalculatorController : Controller
     {
         public IActionResult Index()
@@ -10,13 +14,14 @@ namespace Laboratorium2.Controllers
             return View();
         }
 
+
         public IActionResult Form()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Result([FromForm] CalculatorViewModel model)
+        public IActionResult Result([FromForm] Calculator model)
         {
             if (!model.IsValid())
             {

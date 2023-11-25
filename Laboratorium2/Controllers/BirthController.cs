@@ -10,11 +10,11 @@ namespace Laboratorium2.Controllers
         {
             return View();
         }
+
         public IActionResult Form()
         {
             return View();
         }
-
 
         [HttpPost]
         public IActionResult Result([FromForm] BirthViewModel model)
@@ -27,4 +27,3 @@ namespace Laboratorium2.Controllers
         }
     }
 }
-
